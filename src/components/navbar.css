@@ -1,0 +1,11 @@
+.nav-icon-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -4vh;
+}
+
+.nav-icon {
+    align-self: flex-end;
+    padding: 15px 15px 0 0;
+    color: rgb(237, 237, 237);
+}
