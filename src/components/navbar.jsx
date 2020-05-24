@@ -3,7 +3,7 @@ import {  Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import './navbar.css'
 
 export default function SidebarExampleVisible(props) {
-const { content, navbarVisible } = props
+const { content, navbarVisible, open } = props
     return (
         <Sidebar.Pushable as={Segment}>
             <Sidebar
@@ -17,14 +17,18 @@ const { content, navbarVisible } = props
                 width='thin'
             >
                 <Menu.Item as='a'>
+                    <Icon name='bars' />
+        {/* (Close) */}
+      </Menu.Item>
+                <Menu.Item href='/' as='a'>
                     <Icon name='home' />
         Home
       </Menu.Item>
-                <Menu.Item as='a'>
+                <Menu.Item href='/about' as='a'>
                     <Icon name='user' />
         About
       </Menu.Item>
-                <Menu.Item as='a'>
+                <Menu.Item href='/portfolio' as='a'>
                     <Icon name='th' />
         Portfolio
       </Menu.Item>
@@ -35,14 +39,14 @@ const { content, navbarVisible } = props
       
             </Sidebar>
 
-            <Sidebar.Pusher>
-                <Segment basic>
-                    <div className='nav-icon-container'>
+            {/* <Sidebar.Pusher>
+                <Segment basic> */}
+                    {/* <div className='nav-icon-container'>
                         <Icon size='big' className='nav-icon' name='bars' />
                     </div>
-                    {content}
-                </Segment>
-            </Sidebar.Pusher>
+                    {content} */}
+                {/* </Segment>
+            </Sidebar.Pusher> */}
         </Sidebar.Pushable>
     )
 }

@@ -10,7 +10,7 @@ export default function home() {
                     <div className='intro'>Hello World!</div>
                     <div className='name'>I'm Victor</div>
                     <div className='intro-text'>Welcome to my page</div>
-                    <Button>About</Button>
+                    <Button>Enter</Button>
                 </div>
                 <div className='social-container'>
                     <div className='social-icon'>
