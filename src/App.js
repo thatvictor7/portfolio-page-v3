@@ -106,6 +106,7 @@ class App extends React.Component {
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}
+            // className='sidebar'
             animation='overlay'
             icon='labeled'
             direction='right'

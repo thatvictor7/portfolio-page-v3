@@ -12,6 +12,9 @@ export default function home() {
                     <div className='intro-text'>Welcome to my page</div>
                     <Button>Enter</Button>
                 </div>
+
+                <div className='logo'>[ VM ]</div>
+
                 <div className='social-container'>
                     <div className='social-icon'>
                         <Icon size='large' name='linkedin' />
