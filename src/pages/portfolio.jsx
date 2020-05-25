@@ -77,12 +77,20 @@ export default function Portfolio() {
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block bottom-center'>
-                            <Icon size='massive' name='angular' />
+                            <div className='project-overlay'>
+                                <div className='text'>
+                                    <div>Angular Issues</div>
+                                </div>
+                            </div>
                         </div>
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block bottom-right'>
-                            <Icon size='massive' name='database' />
+                            <div className='project-overlay'>
+                                <div className='text'>
+                                    <div>Database</div>
+                                </div>
+                            </div>
                         </div>
                     </Grid.Column>
                 </Grid.Row>

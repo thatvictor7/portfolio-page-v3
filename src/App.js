@@ -78,7 +78,7 @@ import {
   Switch,
   Route
 } from "react-router-dom"
-import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
+import { Icon, Menu, Segment, Sidebar, Checkbox } from 'semantic-ui-react'
 import './App.css'
 import './components/navbar.css'
 
@@ -137,6 +137,15 @@ class App extends React.Component {
             <Menu.Item as='a'>
               {/* <Icon name='suitcase' /> */}
         Hire Victor
+      </Menu.Item>
+            <Menu.Item as='a'>
+              {/* <Icon name='suitcase' /> */}
+        <div className='selector'>
+          {/* 🇺🇸
+          <Checkbox toggle />
+          🇪🇸 */}
+          Language
+        </div>
       </Menu.Item>
           </Sidebar>
 
