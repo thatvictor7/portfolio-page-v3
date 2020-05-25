@@ -14,6 +14,19 @@
     color: rgb(237, 237, 237);
 }
 
-.ui.right.overlay.sidebar {
-    z-index: 100;
+.ui.thin.right.sidebar {
+    width: 98vw;
+    margin-right: 1vw !important;
 }
+
+.ui.inverted.menu {
+    background-color: rgb(12, 24, 40);
+}
+
+/* .ui.right.overlay.sidebar {
+    z-index: 100;
+} */
+
+/* .selector {
+    font-size: 2em;
+} */

@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
+import {  Icon, Menu, Segment, Sidebar, Checkbox } from 'semantic-ui-react'
 import './navbar.css'
 
 export default function SidebarExampleVisible(props) {
@@ -36,6 +36,15 @@ const { content, navbarVisible, open } = props
                     <Icon name='address card' />
         Contact
       </Menu.Item>
+                <Menu.Item as='a'>
+                    <Icon name='address card' />
+        Contact
+      </Menu.Item>
+      {/* <Menu.Item as='a'>
+        <div style={{backgroundColor: 'white'}}>
+            <Checkbox toggle />
+        </div>
+      </Menu.Item> */}
       
             </Sidebar>
 
