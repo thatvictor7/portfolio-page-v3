@@ -2,8 +2,112 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: rgb(2, 23, 34);
     color: white;
+}
+
+.header {
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.header-bar {
+    margin-top: 10%;
+    width: 4em;
+    height: 1px;
+    background-color: white;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 20%;
+}
+
+.profile-image {
+    background-image: url('../assets/profile.jpg');
+    background-color: aqua;
+    height: 15em;
+    width: 15em;
+    background-position: center;
+    background-size: cover;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    text-align: justify;
+}
+
+.skills-container {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-segment {
+    width: 19vw;
+    display: flex;
+    margin: .5em 0;
+    align-items: center;
+    padding-left: 15%;
+    height: 1.5em;
+    text-align: left;
+}
+
+.ui.segment {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-width: 767px) {
+    .info-section {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+        margin-top: 10%;
+    }
+
+    .description-container {
+        width: 90vw;
+    }
+
+    .skills-container {
+        width: 100vw;
+    }
+
+    .skills-grid {
+        width: 100vw;
+    }
+
+    .skill-segment {
+        width: 40vw;
+        justify-content: flex-start;
+    }
 }

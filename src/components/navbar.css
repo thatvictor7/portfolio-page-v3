@@ -15,8 +15,7 @@
 }
 
 .ui.thin.right.sidebar {
-    width: 98vw;
-    margin-right: 1vw !important;
+    width: 40vw
 }
 
 .ui.inverted.menu {
@@ -30,3 +29,10 @@
 /* .selector {
     font-size: 2em;
 } */
+
+@media only screen and (max-width: 767px) {
+    .ui.thin.right.sidebar {
+        width: 98vw;
+        margin-right: 1vw !important;
+    }
+}

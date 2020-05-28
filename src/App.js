@@ -120,31 +120,30 @@ class App extends React.Component {
             </Menu.Item>
             <Menu.Item href='/' as='a'>
               {/* <Icon name='home' /> */}
-        Home
+        HOME
       </Menu.Item>
             <Menu.Item href='/about' as='a'>
               {/* <Icon name='user' /> */}
-        About
+        ABOUT
       </Menu.Item>
             <Menu.Item href='/portfolio' as='a'>
               {/* <Icon name='th' /> */}
-        Portfolio
+        PORTFOLIO
       </Menu.Item>
             <Menu.Item href='/contact' as='a'>
               {/* <Icon name='address card' /> */}
-        Contact
+        CONTACT
       </Menu.Item>
-            <Menu.Item as='a'>
-              {/* <Icon name='suitcase' /> */}
+            {/* <Menu.Item as='a'>
         Hire Victor
-      </Menu.Item>
+      </Menu.Item> */}
             <Menu.Item as='a'>
               {/* <Icon name='suitcase' /> */}
         <div className='selector'>
           {/* 🇺🇸
           <Checkbox toggle />
           🇪🇸 */}
-          Language
+          LANGUAGE
         </div>
       </Menu.Item>
           </Sidebar>

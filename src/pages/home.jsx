@@ -17,17 +17,18 @@ export default function home() {
 
                 <div className='social-container'>
                     <a className='social-icon' href=''>
-                        <div>
                             <Icon size='large' name='linkedin' />
-                        </div>
+                            LinkedIn
                     </a>
-                    <div className='social-icon'>
-                        <Icon size='large' name='github' />
-                    </div>
-                    <div className='social-icon'>
-                        <Icon size='large' name='mail' />
-                        {/* <Checkbox toggle /> */}
-                    </div>
+                    <a className='social-icon'>
+                            <Icon size='large' name='github' />
+                            Github
+                    </a>
+                    <a className='social-icon' href="mailto:thatvictor7@gmail.com">
+                            <Icon size='large' name='mail' />
+                            Email
+                        {/* </div> */}
+                    </a>
                 </div>
             </div>
         </div>

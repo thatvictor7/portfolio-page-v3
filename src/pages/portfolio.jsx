@@ -50,7 +50,7 @@ export default function Portfolio() {
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block middle-center'>
-                            <div>Projects</div>
+                            <div>PROJECTS</div>
                         </div>
                     </Grid.Column>
                     <Grid.Column>
