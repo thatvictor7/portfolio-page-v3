@@ -1,19 +1,32 @@
 .nav-icon-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
-    /* margin-bottom: -4vh; */
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 15px 15px 15px; */
+    padding: 10px;
+    background-color: rgba(5, 48, 75, 1);
 }
 
 .nav-icon {
-    align-self: flex-end;
-    padding: 15px 15px 0 0;
+    /* align-self: flex-end; */
+    /* padding: 15px 15px 0 0; */
     color: rgb(237, 237, 237);
 }
 
+.nav-logo {
+    background-image: url('../assets/v-logo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2em;
+    width: 2em;
+    /* margin: ; */
+}
 .ui.thin.right.sidebar {
     width: 40vw
 }
@@ -22,13 +35,9 @@
     background-color: rgb(12, 24, 40);
 }
 
-/* .ui.right.overlay.sidebar {
-    z-index: 100;
-} */
-
-/* .selector {
-    font-size: 2em;
-} */
+.ui.visible.right.overlay.sidebar {
+    padding-top: 55px !important;
+}
 
 @media only screen and (max-width: 767px) {
     .ui.thin.right.sidebar {

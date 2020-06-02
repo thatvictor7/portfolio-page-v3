@@ -5,8 +5,8 @@ import { Grid, Segment, Icon } from 'semantic-ui-react'
 export default function About() {
 
     const skills = {
-        'first': [['JavaScript', 'js'], ['React.JS', 'react'], ['SQL', 'database'], ['Github', 'github']],
-        'second': [['Node.JS', 'node js'], ['React Native', 'react'], ['Python', 'python'], ['Responsive', 'mobile alternate']]
+        'first': [['JAVASCRIPT', 'js'], ['REACTJS', 'react'], ['SQL', 'database'], ['GITHUB', 'github']],
+        'second': [['NODEJS', 'node js'], ['REACT NATIVE', 'react'], ['PYTHON', 'python'], ['RESPONSIVE', 'mobile alternate']]
     }
 
     return (

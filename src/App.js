@@ -1,72 +1,3 @@
-// import React from 'react'
-// import Navbar from './components/navbar.jsx'
-// import Home from './pages/home.jsx'
-// import About from './pages/about.jsx'
-// import Portfolio from './pages/portfolio.jsx'
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route
-// } from "react-router-dom"
-// import './App.css'
-
-// class App extends React.Component {
-
-//   constructor(props) {
-//     super(props)
-//     this.state = {
-//       navbarVisible: true
-//     }
-//     // this.sidebarOpen = this.sidebarOpen.bind(this)
-//   }
-
-
-//   // sidebarOpen(params) {
-//   //   // params.preventDefault()
-//   //   // this.setState({ navbarVisible:  false})
-//   //   // this.setState( state => ({
-//   //   //   navbarVisible: !state.navbarVisible
-//   //   // }))
-//   //   console.log(this.state, params, 'test');
-//   // }
-//   componentDidUpdate =() => {
-//     console.log('test');
-//   }
-
-//   render() {
-
-
-//     return (
-//       // <div className="App" >
-//       //   <Navbar navbarVisible={this.state.navbarVisible} content={<Home />} />
-//       // </div>
-//       <div className='App'>
-//       {/* {this.sidebarOpen()} */}
-//         <Router>
-//           <Switch>
-
-//             <Route exact path='/'>
-//               {/* <Navbar open={console.log('props')} navbarVisible={this.state.navbarVisible} content={<Home />} /> */}
-//               <Navbar />
-//               <Home />
-//             </Route>
-
-//             <Route exact path='/about'>
-//               <Navbar navbarVisible={this.state.navbarVisible} content={<About />} />
-//             </Route>
-
-//             <Route exact path='/portfolio'>
-//               <Navbar navbarVisible={this.state.navbarVisible} content={<Portfolio />} />
-//             </Route>
-
-//           </Switch>
-//         </Router>
-//       </div>
-//     )
-//   }
-// }
-
-// export default App;
 import React from 'react'
 // import Navbar from './components/navbar.jsx'
 import Home from './pages/home.jsx'
@@ -78,7 +9,7 @@ import {
   Switch,
   Route
 } from "react-router-dom"
-import { Icon, Menu, Segment, Sidebar, Checkbox } from 'semantic-ui-react'
+import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import './App.css'
 import './components/navbar.css'
 
@@ -102,7 +33,10 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-
+        <div onClick={this.navOpen} className='nav-icon-container'>
+          <div className='nav-logo'></div>
+          <Icon size='big' className='nav-icon' name='bars' />
+        </div>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}
@@ -119,11 +53,9 @@ class App extends React.Component {
               <Icon name='bars' />
             </Menu.Item>
             <Menu.Item href='/' as='a'>
-              {/* <Icon name='home' /> */}
         HOME
       </Menu.Item>
             <Menu.Item href='/about' as='a'>
-              {/* <Icon name='user' /> */}
         ABOUT
       </Menu.Item>
             <Menu.Item href='/portfolio' as='a'>
@@ -150,14 +82,19 @@ class App extends React.Component {
 
           <Sidebar.Pusher>
             <Segment basic>
-              
-              {!this.state.navbarVisible ? 
+              {/* <div className='nav-logo'></div> */}
+              {/* {!this.state.navbarVisible ? 
               // console.log('visible')
                 <div onClick={this.navOpen} className='nav-icon-container'>
+                  <div className='nav-logo'></div>
                 <Icon size='big' className='nav-icon' name='bars' />
               </div>
               : null
-              }
+              } */}
+              {/* <div onClick={this.navOpen} className='nav-icon-container'>
+                <div className='nav-logo'></div>
+                <Icon size='big' className='nav-icon' name='bars' />
+              </div> */}
 
               <Router>
                 <Switch>

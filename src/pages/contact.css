@@ -5,6 +5,36 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.contact-info {
+    margin-top: 5%;
+}
+
+Form {
+    /* justify-self: center; */
+    margin-top: 5%;
+    width: 60vw;
+}
+
+.input-field {
+    background-color: rgba(5, 48, 75, 0.66) !important;
+    color: white !important;
+}
+
+.message-input {
+    height: 10em;
+    display: flex;
+    padding-top: 1px;
+    background-color: rgba(5, 48, 75, 0.66) !important;
+    color: white !important;
+    /* align-items: flex-start !important; */
+}
+
+@media only screen and (max-width: 767px) {
+    Form {
+        width: 90vw;
+    }
 }
