@@ -6,15 +6,7 @@ export default function home() {
     return (
         <div className='home-container'>
             <div className='home-content'>
-                {/* <div>
-                    <div className='name-row'>Hello World!<br></br> I'm <span className='name'>Victor</span></div>
-                    <div className='intro-text'>I am a Software Developer. Welcome to my page</div>
-                    <Button href='/about' className='home-button'>Enter</Button>
-                </div>  */}
-
-
                 <div className='logo'></div>
-
 
                 <div className='home-intro-container'>
                     <div className='home-intro'>
@@ -25,31 +17,17 @@ export default function home() {
                     <div>A Software Developer</div>
                 </div>
 
-                <button as='a' href='/about' className='enter-button'>Enter</button>
-                {/* <div className='social-container'>
-                    <a className='social-icon' href=''>
-                            <Icon size='large' name='linkedin' />
-                            LinkedIn
-                    </a>
-                    <a className='social-icon'>
-                            <Icon size='large' name='github' />
-                            Github
-                    </a>
-                    <a className='social-icon' href="mailto:thatvictor7@gmail.com">
-                            <Icon size='large' name='mail' />
-                            Email
-                    </a>
-                </div> */}
+                <Button as='button' href='/about' className='enter-button button-animation'>Enter</Button>
             </div>
             <div className='social-icons-container'>
-                <a href=''>
-                    <Icon size='large' name='linkedin' />
+                <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
+                    <Icon className='social-icon' size='large' name='linkedin alternate' />
                 </a>
-                <a href=''>
-                    <Icon size='large' name='github' />
+                <a className='social-block' href='https://github.com/thatvictor7'>
+                    <Icon className='social-icon' size='large' name='github alternate' />
                 </a>
-                <a href=''>
-                    <Icon size='large' name='at' />
+                <a className='social-block' href='mailto:montoya.victor7@gmail.com'>
+                    <Icon className='social-icon' size='large' name='at' />
                 </a>
             </div>
         </div>

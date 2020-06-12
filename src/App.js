@@ -33,10 +33,10 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <div onClick={this.navOpen} className='nav-icon-container'>
-          <div className='nav-logo'></div>
-          <Icon size='big' className='nav-icon' name='bars' />
-        </div>
+                    <div onClick={this.navOpen} className='nav-icon-container'>
+              <div className='nav-logo'></div>
+              <Icon size='big' className='nav-icon' name='bars' />
+            </div>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
             as={Menu}
@@ -67,17 +67,10 @@ class App extends React.Component {
         CONTACT
       </Menu.Item>
             {/* <Menu.Item as='a'>
-        Hire Victor
-      </Menu.Item> */}
-            <Menu.Item as='a'>
-              {/* <Icon name='suitcase' /> */}
         <div className='selector'>
-          {/* 🇺🇸
-          <Checkbox toggle />
-          🇪🇸 */}
           LANGUAGE
         </div>
-      </Menu.Item>
+      </Menu.Item> */}
           </Sidebar>
 
           <Sidebar.Pusher>
