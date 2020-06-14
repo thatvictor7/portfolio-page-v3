@@ -3,9 +3,10 @@ import { Grid, Icon } from 'semantic-ui-react'
 import './portfolio.css'
 
 export default function Portfolio() {
-    // const dh = url('../assets/denverHelps.png')
+
     return (
         <div className='portfolio-container'>
+            <div className='portfolio-title'>PORTFOLIO</div>
             <Grid columns={3} stackable>
 
                 <Grid.Row className='row'>
@@ -43,31 +44,30 @@ export default function Portfolio() {
                         <div className='block middle-left'>
                             <div className='project-overlay'>
                                 <div className='text'>
-                                    <div>Notesy™️</div>
+                                    <div>Notesy</div>
                                 </div>
                             </div>
                         </div>
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block middle-center'>
-                            <div>PROJECTS</div>
+                            {/* <div>PROJECTS</div> */}
                         </div>
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block middle-right'>
                             <div className='project-overlay'>
                                 <div className='text'>
-                                    <div>Bank Api</div>
+                                    <div>Swyft</div>
                                 </div>
                             </div>
                         </div>
                     </Grid.Column>
                 </Grid.Row>
 
-                <Grid.Row className='row'>
+                {/* <Grid.Row className='row'>
                     <Grid.Column>
                         <div className='block bottom-left'>
-                            {/* <Icon size='massive' name='mail' /> */}
                             <div className='project-overlay'>
                                 <div className='text'>
                                     <div>Gmail Clone</div>
@@ -93,7 +93,7 @@ export default function Portfolio() {
                             </div>
                         </div>
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
             </Grid>
         </div>
     )
