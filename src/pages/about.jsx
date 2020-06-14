@@ -4,11 +4,6 @@ import { Icon, Button, List } from 'semantic-ui-react'
 
 export default function About() {
 
-    // const skills = {
-    //     'first': [['JAVASCRIPT', 'js'], ['REACTJS', 'react'], ['SQL', 'database'], ['GITHUB', 'github']],
-    //     'second': [['NODEJS', 'node js'], ['REACT NATIVE', 'react'], ['PYTHON', 'python'], ['RESPONSIVE', 'mobile alternate']]
-    // }
-
     const skills = [
         ['JAVASCRIPT', 'js'],
         ['REACTJS', 'react'],
@@ -17,7 +12,7 @@ export default function About() {
         ['SQL', 'database'],
         ['GITHUB', 'github'],
         ['PYTHON', 'python'],
-        ['RESPONSIVE', 'mobile alternate']
+        ['RESPONSIVE DESIGN', 'mobile alternate']
     ]
 
     function skillsList() {
@@ -46,9 +41,6 @@ export default function About() {
                 </div>
 
                 <div className='description-container'>
-                    {/* <div className='about-intro'>
-                        About Me
-                    </div> */}
                     <div className='location'>
                         I'm a Software Developer based out of Denver, Colorado.
                     </div>
@@ -65,7 +57,7 @@ export default function About() {
                 {skillsList()}
             </div>
 
-            <Button as='button' href='/portfolio' className='enter-button button-animation'>PROJECTS</Button>
+            <Button as='button' href='/portfolio' className='enter-button'>PROJECTS</Button>
 
             <div className='social-icons-container about-social-icons'>
                 <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>

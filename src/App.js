@@ -1,5 +1,4 @@
 import React from 'react'
-// import Navbar from './components/navbar.jsx'
 import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Portfolio from './pages/portfolio.jsx'
@@ -33,12 +32,13 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-                    <div onClick={this.navOpen} className='nav-icon-container'>
-              <div className='nav-logo'></div>
-              <Icon size='big' className='nav-icon' name='bars' />
-            </div>
+        <div onClick={this.navOpen} className='nav-icon-container'>
+          <div className='nav-logo'></div>
+          <Icon size='big' className='nav-icon' name='bars' />
+        </div>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
+            onClick={this.navOpen}
             as={Menu}
             // className='sidebar'
             animation='overlay'
@@ -49,23 +49,22 @@ class App extends React.Component {
             visible={this.state.navbarVisible}
             width='thin'
           >
-            <Menu.Item onClick={this.navOpen} as='a'>
+            {/* <Menu.Item onClick={this.navOpen} as='a'>
               <Icon name='bars' />
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item href='/' as='a'>
-        HOME
+              HOME
       </Menu.Item>
             <Menu.Item href='/about' as='a'>
-        ABOUT
+              ABOUT
       </Menu.Item>
             <Menu.Item href='/portfolio' as='a'>
               {/* <Icon name='th' /> */}
         PORTFOLIO
       </Menu.Item>
-            <Menu.Item href='/contact' as='a'>
-              {/* <Icon name='address card' /> */}
+            {/* <Menu.Item href='/contact' as='a'>
         CONTACT
-      </Menu.Item>
+      </Menu.Item> */}
             {/* <Menu.Item as='a'>
         <div className='selector'>
           LANGUAGE

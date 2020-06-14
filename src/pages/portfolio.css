@@ -143,4 +143,12 @@
     .block {
         height: 20vh;
     }
+
+    .grid {
+        margin-top: 20px !important;
+    }
+
+    .portfolio-title {
+        margin-top: 70px;
+    }
 }

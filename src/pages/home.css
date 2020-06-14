@@ -81,7 +81,7 @@
 }
 
 .button-animation:hover {
-    /* background-color: white !important; */
+    background: white !important;
 }
 
 .button-animation:after {
@@ -114,15 +114,16 @@
 .enter-button {
     width: 14em;
     padding: 10px;
-    /* background-color: rgba(5, 48, 75, 1); */
+    background: rgba(5, 48, 75, 1) !important;
     /* color: white; */
     cursor: pointer;
     border: none;
+    border-radius: 0 !important;
     color: rgb(249, 249, 249) !important;
 }
 
 .enter-button:hover {
-    background-color: white;
+    background: white !important;
     color: rgba(55, 166, 254, 1) !important;
     /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%); */
@@ -164,12 +165,12 @@
 }
 
 .social-block:hover .social-icon {
-    /* background-color: white; */
+    background-color: white;
     color: rgba(55, 166, 254, 1);
 }
 
 .social-block:hover {
-    /* background-color: white; */
+    background-color: white;
 }
 
 .social-icon {

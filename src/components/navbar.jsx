@@ -16,10 +16,9 @@ const { content, navbarVisible, open } = props
                 visible={navbarVisible}
                 width='thin'
             >
-                <Menu.Item as='a'>
+                {/* <Menu.Item as='a'>
                     <Icon name='bars' />
-        {/* (Close) */}
-      </Menu.Item>
+      </Menu.Item> */}
                 <Menu.Item href='/' as='a'>
                     <Icon name='home' />
         Home

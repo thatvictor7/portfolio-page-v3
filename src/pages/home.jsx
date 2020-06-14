@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Icon, Checkbox } from 'semantic-ui-react'
+import { Button, Icon } from 'semantic-ui-react'
 import './home.css'
 
 export default function home() {
@@ -17,7 +17,7 @@ export default function home() {
                     <div>A Software Developer</div>
                 </div>
 
-                <Button as='button' href='/about' className='enter-button button-animation'>Enter</Button>
+                <Button as='button' href='/about' className='enter-button '>Enter</Button>
             </div>
             <div className='social-icons-container'>
                 <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
