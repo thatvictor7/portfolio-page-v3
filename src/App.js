@@ -4,9 +4,9 @@ import About from './pages/about.jsx'
 import Portfolio from './pages/portfolio.jsx'
 import Contact from './pages/contact.jsx'
 import {
-  BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom"
 import { Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import './App.css'
@@ -52,16 +52,21 @@ class App extends React.Component {
             {/* <Menu.Item onClick={this.navOpen} as='a'>
               <Icon name='bars' />
             </Menu.Item> */}
-            <Menu.Item href='/' as='a'>
-              HOME
-      </Menu.Item>
-            <Menu.Item href='/about' as='a'>
-              ABOUT
-      </Menu.Item>
-            <Menu.Item href='/portfolio' as='a'>
-              {/* <Icon name='th' /> */}
-        PORTFOLIO
-      </Menu.Item>
+            <Link to='/'>
+              <Menu.Item href='/' as='a'>
+                HOME
+              </Menu.Item>
+            </Link>
+            <Link to='/about'>
+              <Menu.Item href='#about' as='a'>
+                ABOUT
+              </Menu.Item>
+            </Link>
+            <Link to='/portfolio'>
+              <Menu.Item href='#portfolio' as='a'>
+                PORTFOLIO
+              </Menu.Item>
+            </Link>
             {/* <Menu.Item href='/contact' as='a'>
         CONTACT
       </Menu.Item> */}
@@ -87,28 +92,25 @@ class App extends React.Component {
                 <div className='nav-logo'></div>
                 <Icon size='big' className='nav-icon' name='bars' />
               </div> */}
+              <div>
+                  <Switch>
+                    <Route exact path='/'>
+                      <Home />
+                    </Route>
 
-              <Router>
-                <Switch>
+                    <Route path='/about'>
+                      <About />
+                    </Route>
 
-                  <Route exact path='/'>
-                    <Home />
-                  </Route>
+                    <Route path='/portfolio'>
+                      <Portfolio />
+                    </Route>
 
-                  <Route exact path='/about'>
-                    <About />
-                  </Route>
-
-                  <Route exact path='/portfolio'>
-                    <Portfolio />
-                  </Route>
-
-                  <Route exact path='/contact'>
-                    <Contact />
-                  </Route>
-
-                </Switch>
-              </Router>
+                    <Route path='/contact'>
+                      <Contact />
+                    </Route>
+                  </Switch>
+              </div>
 
             </Segment>
           </Sidebar.Pusher>

@@ -1,5 +1,8 @@
 import React from 'react'
 import './about.css'
+import {
+    Link
+} from "react-router-dom"
 import { Icon, Button, List } from 'semantic-ui-react'
 
 export default function About() {
@@ -57,7 +60,10 @@ export default function About() {
                 {skillsList()}
             </div>
 
-            <Button as='button' href='/portfolio' className='enter-button'>PROJECTS</Button>
+            {/* <Button as='button' href='/portfolio' className='enter-button'>PROJECTS</Button> */}
+            <Link to='/portfolio'>
+                <div as='button' href='/portfolio' className='enter-button'>PROJECTS</div>
+            </Link>
 
             <div className='social-icons-container about-social-icons'>
                 <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
