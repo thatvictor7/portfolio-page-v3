@@ -1,0 +1,17 @@
+.tech-container {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tech-button {
+    text-align: center;
+    width: fit-content;
+    background-color: rgba(5, 48, 75, 1);
+    border-radius: 15px;
+    padding: 3px 9px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
