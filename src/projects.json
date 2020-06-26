@@ -1,0 +1,94 @@
+{
+    "projects": {
+
+        "row1": [{
+            "name": "Denver Helps",
+            "description": "Denver Helps is a group project I did for a Hackathon where we earned 1st place. We wanted to create something that can help the homeless population by providing resources in one place. You can find shelter, food, or medical care based on your zip code.",
+            "tech": [
+                "React", "Material UI", "Twilio"
+            ],
+            "links": [{
+                "name": "Visit Website",
+                "link": "https://www.denverhelps.com/",
+                "icon": "laptop"
+            },
+            {
+               "name": "Github",
+               "link": "https://github.com/joelbrewer/mile-high-hackathon-2019",
+               "icon": "github"
+            }
+        ],
+            "styling": "block top-left"
+        }, {
+            "name": "A Good Living",
+            "description": "A Good Living is a company website I built with React.JS and styled with Semantic UI, and deployed using Firebase.",
+            "tech": [
+                "React", "Semantic UI", "Firebase"
+            ],
+            "links": [{
+                    "name": "Visit Website",
+                    "link": "https://agoodliving.org/about",
+                    "icon": "laptop"
+                }
+            ],
+            "styling": "block top-center"
+        }, {
+            "name": "Loan Calculator",
+            "description": "Loan Calculator is a mobile app built with React Native, and custom made components. It is published on Google Play Store for Android devices.",
+            "tech": [
+                "React Native", "Expo", "Google AdMov"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "link": "https://github.com/thatvictor7/loanCalculatorApp2.0",
+                    "icon": "github"
+                }, {
+                    "name": "Play Store",
+                    "link": "https://play.google.com/store/apps/details?id=com.victory.yourloancalculator",
+                    "icon": "google play"
+                }
+            ],
+            "styling": "block top-right"
+        }],
+        "row2": [{
+                "name": "Notesy",
+                "description": "This app is a note app, allows you to sign in and view your notes. You can add, modify and delete notes. This app was created with React and material UI for front end, Node.JS, Express.JS, PostgreSQL is used for API.",
+                "tech": [
+                    "React", "Material UI", "Redux","Node.JS", "Express.JS"
+                ],
+                "links": [
+                    {
+                        "name": "Github",
+                        "link": "https://github.com/thatvictor7/NotesAppReact",
+                        "icon": "github"
+                    },
+                    {
+                        "name": "API Github",
+                        "link": "https://github.com/thatvictor7/NotesAppServer",
+                        "icon": "github"
+                    }
+                ],
+                "styling": "block middle-left"
+            },
+            
+
+            {
+                "name": "Swyft",
+                "description": "Swyft is a online order app created using React and styled with Semantic UI. Pick your food items and add to your bag. ",
+                "tech": [
+                    "React", "Semantic UI"
+                ],
+                "links": [
+                    {
+                        "name": "Github",
+                        "link": "https://github.com/thatvictor7/Swift",
+                        "icon": "github"
+                    }
+                ],
+                "styling": "block middle-right"
+            }
+        ]
+
+    }
+}

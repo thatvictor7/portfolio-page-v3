@@ -1,8 +1,19 @@
 import React from 'react'
-import { Grid, Icon } from 'semantic-ui-react'
+import { Grid, Icon, Modal, Button, Image, Header } from 'semantic-ui-react'
 import './portfolio.css'
+import TechButtons from '../components/techButtons.jsx'
+import ProjectLinks from '../components/projectLinks.jsx'
+import Data from '../projects.json'
 
 export default function Portfolio() {
+
+    let projectImages = {
+        "Denver Helps": require('../assets/denverHelps.png'),
+        "A Good Living": require('../assets/agl.png'),
+        "Loan Calculator": require('../assets/loanApp.png'),
+        "Notesy": require('../assets/notesy.png'),
+        "Swyft": require('../assets/swift.png')
+    }
 
     return (
         <div className='portfolio-container'>
@@ -10,37 +21,60 @@ export default function Portfolio() {
             <Grid columns={3} stackable>
 
                 <Grid.Row className='row'>
-                    <Grid.Column>
-                        <div className='block top-left'>
-                            <div className='project-overlay'>
-                                <div className='text'>
-                                    <div>Denver Helps</div>
+                    {Data.projects.row1.map((p) => {
+                        return <Modal trigger={<Grid.Column>
+                            <div className={p.styling}>
+                                <div className='project-overlay'>
+                                    <div className='text'>
+                                        <div>{p.name}</div>
+                                        {/* {console.log(p)} */}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <div className='block top-center'>
-                            <div className='project-overlay'>
-                                <div className='text'>
-                                    <div>A Good Living</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <div className='block top-right'>
-                            <div className='project-overlay'>
-                                <div className='text'>
-                                    <div>Loan Calculator</div>
-                                </div>
-                            </div>
-                        </div>
-                    </Grid.Column>
+                        </Grid.Column>}>
+                            <Modal.Header>{p.name}</Modal.Header>
+                            <Modal.Content image>
+                                <Image wrapped size='big' src={projectImages[p.name]} />
+                                {console.log(p.image)}
+                                <Modal.Description>
+                                    {/* <Header>Default Profile Image</Header> */}
+                                    <p>{p.description}</p>
+                                    <TechButtons tech={p.tech} />
+                                    <ProjectLinks links={p.links} />
+                                </Modal.Description>
+                            </Modal.Content>
+                        </Modal>  
+                    })}
                 </Grid.Row>
 
                 <Grid.Row className='row'>
-                    <Grid.Column>
+                    {
+                        Data.projects.row2.map((p) => {
+                            return <Modal trigger={<Grid.Column>
+                                <div className={p.styling}>
+                                    <div className='project-overlay'>
+                                        <div className='text'>
+                                            <div>{p.name}</div>
+                                            {/* {console.log(p)} */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Grid.Column>}>
+                                <Modal.Header>{p.name}</Modal.Header>
+                                <Modal.Content image>
+                                    <Image wrapped size='big' src={projectImages[p.name]} />
+                                    {console.log(p.image)}
+                                    <Modal.Description>
+                                        {/* <Header>Default Profile Image</Header> */}
+                                        <p>{p.description}</p>
+                                        <TechButtons tech={p.tech} />
+                                        <ProjectLinks links={p.links} />
+                                    </Modal.Description>
+                                </Modal.Content>
+                            </Modal>
+                        })
+                    }
+                    {/* <Grid.Column>
                         <div className='block middle-left'>
                             <div className='project-overlay'>
                                 <div className='text'>
@@ -51,7 +85,6 @@ export default function Portfolio() {
                     </Grid.Column>
                     <Grid.Column>
                         <div className='block middle-center'>
-                            {/* <div>PROJECTS</div> */}
                         </div>
                     </Grid.Column>
                     <Grid.Column>
@@ -62,7 +95,7 @@ export default function Portfolio() {
                                 </div>
                             </div>
                         </div>
-                    </Grid.Column>
+                    </Grid.Column> */}
                 </Grid.Row>
 
                 {/* <Grid.Row className='row'>
