@@ -1,0 +1,11 @@
+.footer-container {
+    width: 100vw;
+    align-self: flex-end;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.button-group {
+    /* display: flex; */
+}

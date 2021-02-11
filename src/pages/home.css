@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(2, 23, 34);
+    background: url('../assets/pexels-shawn-stutzman-1010496.jpg');
+    background-size: cover;
     color: white;
 }
 
@@ -14,6 +16,13 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    
+    background-color: rgba(5, 36, 72, 0.356);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .name {

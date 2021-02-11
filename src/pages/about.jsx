@@ -1,5 +1,7 @@
 import React from 'react'
 import './about.css'
+import Footer from '../components/footer.jsx'
+import Card from '../components/skillsCard.jsx'
 import {
     Link
 } from "react-router-dom"
@@ -34,48 +36,61 @@ export default function About() {
     }
 
     return (
-        <div className='about-container'>
-            <div className='about-intro'>
-                About Me
-            </div>
-            <div className='info-section'>
+        // <div className='about-container background-main'>
+        //     <div className='about-intro'>
+        //         About Me **********
+        //     </div>
+            // <div className='info-section'>
+            //     <div className='image-container'>
+            //         <div className='profile-image'></div>
+            //     </div>
+
+            //     <div className='description-container'>
+            //         <div className='location'>
+            //             I am an IT Technician based out of Denver, Colorado.
+            //         </div>
+            //         <div className='about-description'>
+            //             {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'}
+            //         </div>
+            //     </div>
+            // </div>
+        //     <div className='inverted primary'>
+        //         <div className='technical'>
+        //             Technical Skills
+        //         </div>
+        //         <div className='skills-text'>I have experience with many technologies, here are some of my more recent ones I've used:</div>
+        //         {skillsList()}
+        //     </div>
+
+        //     <Link to='/portfolio'>
+        //         <div as='button' href='/portfolio' className='enter-button primary'>PROJECTS</div>
+        //     </Link>
+        //     <Footer />
+
+        // </div>
+        <div className='parallax layout'>
+            <div className='about-title'>
+                 About Me 
+             </div>
+
+             <div className='info-section'>
                 <div className='image-container'>
                     <div className='profile-image'></div>
                 </div>
 
                 <div className='description-container'>
                     <div className='location'>
-                        I'm a Software Developer based out of Denver, Colorado.
+                        I am an IT Technician based out of Denver, Colorado.
                     </div>
                     <div className='about-description'>
                         {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'}
                     </div>
                 </div>
             </div>
-            <div className='inverted'>
-                <div className='technical'>
-                    Technical Skills
-                </div>
-                <div className='skills-text'>I have experience with many technologies, here are some of my more recent ones I've used:</div>
-                {skillsList()}
-            </div>
 
-            {/* <Button as='button' href='/portfolio' className='enter-button'>PROJECTS</Button> */}
-            <Link to='/portfolio'>
-                <div as='button' href='/portfolio' className='enter-button'>PROJECTS</div>
-            </Link>
+            <Card skillType='programming' skills={skills} />
 
-            <div className='social-icons-container about-social-icons'>
-                <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
-                    <Icon className='social-icon' size='large' name='linkedin alternate' />
-                </a>
-                <a className='social-block' href='https://github.com/thatvictor7'>
-                    <Icon className='social-icon' size='large' name='github alternate' />
-                </a>
-                <a className='social-block' href='mailto:montoya.victor7@gmail.com'>
-                    <Icon className='social-icon' size='large' name='at' />
-                </a>
-            </div>
+            <Footer />
         </div>
     )
 }

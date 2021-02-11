@@ -17,16 +17,16 @@ export default function home() {
                     I'm <span className='name'>Victor</span><br></br>
                     </div>
 
-                    <div>A Software Developer</div>
+                    {/* <div>A Software Developer</div> */}
                 </div>
 
                 {/* <Link as='a' type='submit' to='/about' className='enter-button '>Enter</Link> */}
                 <Link to='/about'>
-                    <div as='button' href='/about' className='enter-button'>ENTER</div>
+                    <div as='button' href='/about' className='enter-button primary'>ENTER</div>
                 </Link>
             </div>
-            <div className='social-icons-container'>
-                <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
+            {/* <div className='social-icons-container'>
+                <a className='social-block' href='https://www.linkedin.com/in/victor-des/'>
                     <Icon className='social-icon' size='large' name='linkedin alternate' />
                 </a>
                 <a className='social-block' href='https://github.com/thatvictor7'>
@@ -35,7 +35,7 @@ export default function home() {
                 <a className='social-block' href='mailto:montoya.victor7@gmail.com'>
                     <Icon className='social-icon' size='large' name='at' />
                 </a>
-            </div>
+            </div> */}
         </div>
     )
 }

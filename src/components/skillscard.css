@@ -1,0 +1,13 @@
+.card-container {
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 3em 0;
+}
+
+.skill-section {
+    width: 90%;
+}

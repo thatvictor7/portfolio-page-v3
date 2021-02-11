@@ -9,7 +9,10 @@
     justify-content: space-between;
     /* margin: 15px 15px 15px; */
     padding: 10px;
-    background-color: rgba(5, 48, 75, 1);
+    
+    /* background-color: rgb(2, 20, 41); */
+
+    /* background-color: rgba(5, 48, 75, 1); */
     /* border-bottom: solid white; */
 }
 
@@ -33,11 +36,18 @@
 }
 
 .ui.inverted.menu {
-    background-color: rgb(12, 24, 40);
+    background-color: rgba(12, 24, 40, 0.514);
+    /* background-color: rgb(12, 24, 40); */
 }
 
 .ui.visible.right.overlay.sidebar {
     padding-top: 55px !important;
+}
+
+/* Navbar buttons */
+.ui.labeled.icon.menu .item:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 @media only screen and (max-width: 767px) {
