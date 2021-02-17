@@ -10,14 +10,41 @@ import { Icon, Button, List } from 'semantic-ui-react'
 export default function About() {
 
     const skills = [
-        ['JAVASCRIPT', 'js'],
-        ['REACTJS', 'react'],
-        ['NODEJS', 'node js'],
-        ['REACT NATIVE', 'react'],
-        ['SQL', 'database'],
-        ['GITHUB', 'github'],
-        ['PYTHON', 'python'],
-        ['RESPONSIVE DESIGN', 'mobile alternate']
+        ['JavaScript', 'js'],
+        ['ReactJS', 'react'],
+        ['NodeJS', 'node js'],
+        ['React Native', 'react'],
+        // ['SQL', 'database'],
+        ['Github', 'github'],
+        ['Python', 'python'],
+        ['HTML5', 'html5'],
+        ['CSS', 'css3 alternate']
+        // ['RESPONSIVE DESIGN', 'mobile alternate']
+    ]
+
+    const system = [
+        ['Windows 10/8', 'windows'],
+        ['Linux Fedora/Ubuntu', 'linux'],
+        ['macOS', 'apple'],
+        ['Android', 'android'],
+        ['iOS', 'apple']
+    ]
+
+    const hardware = [
+        ['Installation', 'microchip'],
+        ['Troubleshooting', 'configure'],
+        ['Drivers', 'exclamation triangle']
+    ]
+
+    const software = [
+        ['Installation', 'window maximize'],
+        ['Microsoft Office', 'microsoft']
+    ]
+
+    const databases = [
+        ['PostgreSQL', 'database'],
+        ['MS Access', 'microsoft'],
+        ['ER Diagram Design', 'arrows alternate horizontal']
     ]
 
     function skillsList() {
@@ -36,38 +63,6 @@ export default function About() {
     }
 
     return (
-        // <div className='about-container background-main'>
-        //     <div className='about-intro'>
-        //         About Me **********
-        //     </div>
-            // <div className='info-section'>
-            //     <div className='image-container'>
-            //         <div className='profile-image'></div>
-            //     </div>
-
-            //     <div className='description-container'>
-            //         <div className='location'>
-            //             I am an IT Technician based out of Denver, Colorado.
-            //         </div>
-            //         <div className='about-description'>
-            //             {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'}
-            //         </div>
-            //     </div>
-            // </div>
-        //     <div className='inverted primary'>
-        //         <div className='technical'>
-        //             Technical Skills
-        //         </div>
-        //         <div className='skills-text'>I have experience with many technologies, here are some of my more recent ones I've used:</div>
-        //         {skillsList()}
-        //     </div>
-
-        //     <Link to='/portfolio'>
-        //         <div as='button' href='/portfolio' className='enter-button primary'>PROJECTS</div>
-        //     </Link>
-        //     <Footer />
-
-        // </div>
         <div className='parallax layout'>
             <div className='about-title'>
                  About Me 
@@ -88,7 +83,17 @@ export default function About() {
                 </div>
             </div>
 
-            <Card skillType='programming' skills={skills} />
+            <div className='skills-container'>
+            <Card skillType='Programming' skills={skills} skillsRight={true} />
+            <Card skillType='Operating Systems' skills={system} skillsRight={false} />
+            <Card skillType='Hardware' skills={hardware} skillsRight={true} />
+            <Card skillType='Software' skills={software} skillsRight={false} />
+            <Card skillType='Databases' skills={databases} skillsRight={true} />
+            </div>
+
+            <Link to='/portfolio'>
+                <div as='button' href='/portfolio' className='enter-button primary animate__animated animate__pulse animate__delay-3s animate__repeat-2'>PORTFOLIO</div>
+            </Link>
 
             <Footer />
         </div>

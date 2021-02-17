@@ -1,13 +1,51 @@
 .card-container {
-    width: 100%;
-    background-color: teal;
+    width: 100vw;
     display: flex;
+    /* height: ; */
     flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-    padding: 3em 0;
+    align-items: stretch;
+    justify-content: space-evenly;
+    /* padding: 3em 0; */
+
+    /* background-color: tomato; */
+    position: relative;
+    overflow: hidden;
+
+    /* margin: 3em 0; */
 }
 
-.skill-section {
-    width: 90%;
+.skills-section {
+    width: 50vw;
+    /* background-color: thistle; */
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center !important; */
+    /* height: fit-content; */
+    /* height: fit-content; */
+    margin:  0 !important;
+    padding: 4em 5em !important;
 }
+
+.skill-name {
+    /* background-color: teal; */
+    width: 50vw;
+    /* height: fit-content; */
+    /* height: fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+.skill {
+    text-align: left;
+    width: fit-content;
+    /* height: 20px; */
+    margin: .5em 0;
+}
+
+.animate__animated.animate__slideInLeft, .animate__animated.animate__slideInRight {
+    --animate-duration: 4s;
+  }

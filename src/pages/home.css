@@ -187,11 +187,6 @@
     color: #ffffff;
 }
 
-.social-icon:hover {
-    /* box-shadow: 0 0 40px 2px #0099ec,
-    0.5rem 0.5rem 30px #13092d; */
-}
-
 /* .polygon-button {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 85% 100%, 0 100%);
     clip-path: polygon(0, 100% 0, 100% 50%, 85% 100%, 0 100%);

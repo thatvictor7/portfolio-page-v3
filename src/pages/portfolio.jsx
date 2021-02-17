@@ -16,8 +16,10 @@ export default function Portfolio() {
     }
 
     return (
-        <div className='portfolio-container'>
-            <div className='portfolio-title'>PORTFOLIO</div>
+        // <div className='portfolio-container'>
+        <div className='parallax layout'>
+            {/* <div className='portfolio-title'>PORTFOLIO</div> */}
+            <div className='about-title'>PORTFOLIO</div>
             <Grid columns={3} stackable>
 
                 <Grid.Row className='row'>
