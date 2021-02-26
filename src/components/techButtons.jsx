@@ -8,7 +8,7 @@ export default function TechButtons(props) {
     return(
         <div className='tech-container'>
             {tech.map((t) => {
-                return <div className='tech-button'>{t}</div>
+                return <div className='tech-button primary'>{t}</div>
             })}
         </div>
     )

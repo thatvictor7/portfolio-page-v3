@@ -13,29 +13,14 @@
     /* margin-top: 15%; */
 }
 
-/* .header {
-    font-size: 2.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-} */
-/* 
-.header-bar {
-    margin-top: 10%;
-    width: 4em;
-    height: 4px;
-    background-color: rgba(5, 48, 75, 0.66);
-} */
-
 .info-section {
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: center;
     /* margin-top: 5%; */
-    margin: 20vh 0;
+
+    /* margin: 20vh 0; */
 }
 
 .image-container {
@@ -61,12 +46,16 @@
     width: 35vw;
     text-align: justify;
     line-height: initial;
-
-    /* background-color: rgba(240, 255, 255, 0.116); */
-    /* padding: 10px; */
-    /* border-radius: 5px; */
-    border-left: 2px solid rgba(5, 48, 75, 1);
+    border-left: rgb(5, 94, 167) solid 2px;
     padding-left: 15px;
+}
+
+.aplus-cert {
+    background-image: url('../assets/Aplus.png');
+    height: 182.5px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .about-intro {
@@ -120,6 +109,10 @@
 
 .ui.segment {
     background-color: rgba(255, 255, 255, 0);
+}
+
+.ui.list {
+    margin: 5vh 0 !important;
 }
 
 .inverted {
@@ -207,6 +200,9 @@
     align-content: space-between;
     justify-content: space-between;
     padding-top: 10vh;
+    min-height: 105vh;
+    height: auto;
+    align-items: center;
 }
 
 .about-title {

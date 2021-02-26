@@ -7,12 +7,13 @@ export default function skillsCard(props) {
 
     function skillsList() {
         return (
-            <List className='skills-section' verical>
+            <List animated={true} className='skills-section' vertical>
             {/* <List className='skills-section animate__animated animate__slideInRight' verical> */}
                 {skills.map((skill) => {
                     return (
                         <List.Item className='skill'>
-                            {<Icon name={skill[1]} />}
+                            <div className='list-spacer'></div>
+                            {<Icon className='list-icon' name={skill[1]} />}
                             {skill[0]}
                         </List.Item>
                     )
@@ -46,15 +47,9 @@ export default function skillsCard(props) {
     }
 
     return(
-        // <div className='card-container'>
-        //     <div className='skill-name'>
-        //         {skillType}
-        //     </div>
-        //     {skillsList()}
-        // </div>
         <div>
             {skillsRight === true ? skillsToRight() : skillsToLeft()}
-
+            {/* <div>I enjoy programming because it allows me to be creative, </div> */}
         </div>
     )
 }

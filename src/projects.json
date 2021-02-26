@@ -19,7 +19,8 @@
             }
         ],
             "styling": "block top-left"
-        }, {
+        },
+        {
             "name": "A Good Living",
             "description": "A Good Living is a company website I built with React.JS and styled with Semantic UI, and deployed using Firebase.",
             "tech": [
@@ -50,45 +51,44 @@
                 }
             ],
             "styling": "block top-right"
-        }],
-        "row2": [{
-                "name": "Notesy",
-                "description": "This app is a note app, allows you to sign in and view your notes. You can add, modify and delete notes. This app was created with React and material UI for front end, Node.JS, Express.JS, PostgreSQL is used for API.",
-                "tech": [
-                    "React", "Material UI", "Redux","Node.JS", "Express.JS"
-                ],
-                "links": [
-                    {
-                        "name": "Github",
-                        "link": "https://github.com/thatvictor7/NotesAppReact",
-                        "icon": "github"
-                    },
-                    {
-                        "name": "API Github",
-                        "link": "https://github.com/thatvictor7/NotesAppServer",
-                        "icon": "github"
-                    }
-                ],
-                "styling": "block middle-left"
-            },
-            
+        },
+        {
+            "name": "Notesy",
+            "description": "This app is a note app, allows you to sign in and view your notes. You can add, modify and delete notes. This app was created with React and material UI for front end, Node.JS, Express.JS, PostgreSQL is used for API.",
+            "tech": [
+                "React", "Material UI", "Redux","Node.JS", "Express.JS"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "link": "https://github.com/thatvictor7/NotesAppReact",
+                    "icon": "github"
+                },
+                {
+                    "name": "API Github",
+                    "link": "https://github.com/thatvictor7/NotesAppServer",
+                    "icon": "github"
+                }
+            ],
+            "styling": "block middle-left"
+        },
+        
 
-            {
-                "name": "Swyft",
-                "description": "Swyft is a online order app created using React and styled with Semantic UI. Pick your food items and add to your bag. ",
-                "tech": [
-                    "React", "Semantic UI"
-                ],
-                "links": [
-                    {
-                        "name": "Github",
-                        "link": "https://github.com/thatvictor7/Swift",
-                        "icon": "github"
-                    }
-                ],
-                "styling": "block middle-right"
-            }
-        ]
+        {
+            "name": "Swyft",
+            "description": "Swyft is a online order app created using React and styled with Semantic UI. Pick your food items and add to your bag. ",
+            "tech": [
+                "React", "Semantic UI"
+            ],
+            "links": [
+                {
+                    "name": "Github",
+                    "link": "https://github.com/thatvictor7/Swift",
+                    "icon": "github"
+                }
+            ],
+            "styling": "block middle-right"
+        }]
 
     }
 }

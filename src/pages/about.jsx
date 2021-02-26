@@ -68,7 +68,7 @@ export default function About() {
                  About Me 
              </div>
 
-             <div className='info-section'>
+             <div className='info-section spacer20'>
                 <div className='image-container'>
                     <div className='profile-image'></div>
                 </div>
@@ -78,12 +78,17 @@ export default function About() {
                         I am an IT Technician based out of Denver, Colorado.
                     </div>
                     <div className='about-description'>
-                        {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'}
+                        {/* {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'} */}
+                        {'I am a collaborative problem solver who values innovation and taking on new challenges. I enjoy working with technology, doing anything from hardware installation to creating responsive websites.'}
                     </div>
                 </div>
             </div>
 
-            <div className='skills-container'>
+            <div>
+                 <div className='aplus-cert'></div>
+            </div>
+
+            <div className='skills-container spacer20'>
             <Card skillType='Programming' skills={skills} skillsRight={true} />
             <Card skillType='Operating Systems' skills={system} skillsRight={false} />
             <Card skillType='Hardware' skills={hardware} skillsRight={true} />
@@ -92,7 +97,7 @@ export default function About() {
             </div>
 
             <Link to='/portfolio'>
-                <div as='button' href='/portfolio' className='enter-button primary animate__animated animate__pulse animate__delay-3s animate__repeat-2'>PORTFOLIO</div>
+                <div as='button' href='/portfolio' className='spacer20bottom enter-button primary animate__animated animate__pulse animate__delay-3s animate__repeat-2'>PORTFOLIO</div>
             </Link>
 
             <Footer />

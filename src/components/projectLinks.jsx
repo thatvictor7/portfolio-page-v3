@@ -10,7 +10,7 @@ export default function ProjectLinks(props) {
         <div className='project-links-container'>
             {links.map((l) => {
                 // console.log(l)
-                return <Button target="_blank" href={l.link} className='enter-button external-link' animated>
+                return <Button target="_blank" href={l.link} className='enter-button primary external-link' animated>
                     <Button.Content visible>{l.name}</Button.Content>
                     <Button.Content hidden>
                         <Icon name={l.icon} />

@@ -50,6 +50,14 @@
     color: black;
 }
 
+.pushable:not(body)>.ui.sidebar {
+    height: 100vh !important;
+    position: fixed !important;
+    right: 0 !important;
+    bottom: 0 i !important;
+    /* background-color: black; */
+}
+
 @media only screen and (max-width: 767px) {
     .ui.thin.right.sidebar {
         width: 98vw;
