@@ -21,9 +21,9 @@ export default function Portfolio() {
         <div className='parallax layout'>
             {/* <div className='portfolio-title'>PORTFOLIO</div> */}
             <div className='about-title'>PORTFOLIO</div>
-            <div>
+            {/* <div>
                 this is a test
-            </div>
+            </div> */}
 
             <Grid columns='2'>
             <Grid.Row className='row spacer20'>

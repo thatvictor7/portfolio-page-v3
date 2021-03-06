@@ -67,9 +67,9 @@ class App extends React.Component {
                 PORTFOLIO
               </Menu.Item>
             </Link>
-            <Menu.Item href='/contact' as='a'>
+            {/* <Menu.Item href='/contact' as='a'>
               CONTACT
-            </Menu.Item>
+            </Menu.Item> */}
             {/* <Menu.Item as='a'>
         <div className='selector'>
           LANGUAGE

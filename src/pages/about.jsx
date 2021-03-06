@@ -31,20 +31,30 @@ export default function About() {
     ]
 
     const hardware = [
-        ['Installation', 'microchip'],
-        ['Troubleshooting', 'configure'],
-        ['Drivers', 'exclamation triangle']
+        // ['Installation', 'microchip'],
+        // ['Troubleshooting', 'configure'],
+        // ['Drivers', 'exclamation triangle']
+        ['Installation'],
+        ['Troubleshooting'],
+        ['Drivers']
     ]
 
     const software = [
-        ['Installation', 'window maximize'],
-        ['Microsoft Office', 'microsoft']
+        // ['Installation', 'window maximize'],
+        // ['Microsoft Office', 'microsoft'],
+        ['Installation'],
+        ['Troubleshooting'],
+        ['Installation'],
+        ['Microsoft Office'],
     ]
 
     const databases = [
-        ['PostgreSQL', 'database'],
-        ['MS Access', 'microsoft'],
-        ['ER Diagram Design', 'arrows alternate horizontal']
+        // ['PostgreSQL', 'database'],
+        // ['MS Access', 'microsoft'],
+        // ['ER Diagram Design', 'arrows alternate horizontal']
+        ['PostgreSQL'],
+        ['MS Access'],
+        ['ER Diagram Design']
     ]
 
     function skillsList() {
