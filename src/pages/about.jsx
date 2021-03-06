@@ -1,5 +1,7 @@
 import React from 'react'
 import './about.css'
+import Footer from '../components/footer.jsx'
+import Card from '../components/skillsCard.jsx'
 import {
     Link
 } from "react-router-dom"
@@ -8,14 +10,51 @@ import { Icon, Button, List } from 'semantic-ui-react'
 export default function About() {
 
     const skills = [
-        ['JAVASCRIPT', 'js'],
-        ['REACTJS', 'react'],
-        ['NODEJS', 'node js'],
-        ['REACT NATIVE', 'react'],
-        ['SQL', 'database'],
-        ['GITHUB', 'github'],
-        ['PYTHON', 'python'],
-        ['RESPONSIVE DESIGN', 'mobile alternate']
+        ['JavaScript', 'js'],
+        ['ReactJS', 'react'],
+        ['NodeJS', 'node js'],
+        ['React Native', 'react'],
+        // ['SQL', 'database'],
+        ['Github', 'github'],
+        ['Python', 'python'],
+        ['HTML5', 'html5'],
+        ['CSS', 'css3 alternate']
+        // ['RESPONSIVE DESIGN', 'mobile alternate']
+    ]
+
+    const system = [
+        ['Windows 10/8', 'windows'],
+        ['Linux Fedora/Ubuntu', 'linux'],
+        ['macOS', 'apple'],
+        ['Android', 'android'],
+        ['iOS', 'apple']
+    ]
+
+    const hardware = [
+        // ['Installation', 'microchip'],
+        // ['Troubleshooting', 'configure'],
+        // ['Drivers', 'exclamation triangle']
+        ['Installation'],
+        ['Troubleshooting'],
+        ['Drivers']
+    ]
+
+    const software = [
+        // ['Installation', 'window maximize'],
+        // ['Microsoft Office', 'microsoft'],
+        ['Installation'],
+        ['Troubleshooting'],
+        ['Installation'],
+        ['Microsoft Office'],
+    ]
+
+    const databases = [
+        // ['PostgreSQL', 'database'],
+        // ['MS Access', 'microsoft'],
+        // ['ER Diagram Design', 'arrows alternate horizontal']
+        ['PostgreSQL'],
+        ['MS Access'],
+        ['ER Diagram Design']
     ]
 
     function skillsList() {
@@ -34,48 +73,44 @@ export default function About() {
     }
 
     return (
-        <div className='about-container'>
-            <div className='about-intro'>
-                About Me
-            </div>
-            <div className='info-section'>
+        <div className='parallax layout'>
+            <div className='about-title'>
+                 About Me 
+             </div>
+
+             <div className='info-section spacer20'>
                 <div className='image-container'>
                     <div className='profile-image'></div>
                 </div>
 
                 <div className='description-container'>
                     <div className='location'>
-                        I'm a Software Developer based out of Denver, Colorado.
+                        I am an IT Technician based out of Denver, Colorado.
                     </div>
                     <div className='about-description'>
-                        {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'}
+                        {/* {'I am a collaborative problem solver who values innovation and taking on new challenges. I create responsive and visually appealing websites that work in a wide range of devices.'} */}
+                        {'I am a collaborative problem solver who values innovation and taking on new challenges. I enjoy working with technology, doing anything from hardware installation to creating responsive websites.'}
                     </div>
                 </div>
             </div>
-            <div className='inverted'>
-                <div className='technical'>
-                    Technical Skills
-                </div>
-                <div className='skills-text'>I have experience with many technologies, here are some of my more recent ones I've used:</div>
-                {skillsList()}
+
+            <div>
+                 <div className='aplus-cert'></div>
             </div>
 
-            {/* <Button as='button' href='/portfolio' className='enter-button'>PROJECTS</Button> */}
+            <div className='skills-container spacer20'>
+            <Card skillType='Programming' skills={skills} skillsRight={true} />
+            <Card skillType='Operating Systems' skills={system} skillsRight={false} />
+            <Card skillType='Hardware' skills={hardware} skillsRight={true} />
+            <Card skillType='Software' skills={software} skillsRight={false} />
+            <Card skillType='Databases' skills={databases} skillsRight={true} />
+            </div>
+
             <Link to='/portfolio'>
-                <div as='button' href='/portfolio' className='enter-button'>PROJECTS</div>
+                <div as='button' href='/portfolio' className='spacer20bottom enter-button primary animate__animated animate__pulse animate__delay-3s animate__repeat-2'>PORTFOLIO</div>
             </Link>
 
-            <div className='social-icons-container about-social-icons'>
-                <a className='social-block' href='https://www.linkedin.com/in/victor-montoya/'>
-                    <Icon className='social-icon' size='large' name='linkedin alternate' />
-                </a>
-                <a className='social-block' href='https://github.com/thatvictor7'>
-                    <Icon className='social-icon' size='large' name='github alternate' />
-                </a>
-                <a className='social-block' href='mailto:montoya.victor7@gmail.com'>
-                    <Icon className='social-icon' size='large' name='at' />
-                </a>
-            </div>
+            <Footer />
         </div>
     )
 }

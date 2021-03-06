@@ -32,7 +32,7 @@ class App extends React.Component {
 
     return (
       <div className='App'>
-        <div onClick={this.navOpen} className='nav-icon-container'>
+        <div onClick={this.navOpen} className='nav-icon-container primary'>
           <div className='nav-logo'></div>
           <Icon size='big' className='nav-icon' name='bars' />
         </div>
@@ -67,9 +67,9 @@ class App extends React.Component {
                 PORTFOLIO
               </Menu.Item>
             </Link>
-            <Menu.Item href='/contact' as='a'>
+            {/* <Menu.Item href='/contact' as='a'>
               CONTACT
-            </Menu.Item>
+            </Menu.Item> */}
             {/* <Menu.Item as='a'>
         <div className='selector'>
           LANGUAGE
